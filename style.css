@@ -1,0 +1,181 @@
+body {
+  background: thistle;
+  overflow: hidden;
+  user-select: none;
+}
+
+#snake {
+  border: 5px solid purple;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+#btn {
+  width: 40%;
+  height: 3em;
+  background-color: hsl(180, 100%, 10%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid purple;
+  margin: 5px;
+}
+#btn:hover {
+  background-color: hsl(180, 100%, 20%);
+  cursor: pointer;
+}
+#btn1 {
+  width: 20%;
+  height: 3em;
+  background-color: hsl(180, 100%, 10%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid purple;
+  margin: 5px;
+}
+#btn1:hover {
+  background-color: hsl(180, 100%, 20%);
+  cursor: pointer;
+}
+
+#heading {
+  font-size: 4rem;
+  color: rgb(122, 139, 139);
+
+  -webkit-text-stroke: 1px purple;
+  -webkit-text-fill-color: thistle;
+}
+
+#nicki1 {
+  width: 13em;
+  height: 19em;
+  border: 5px outset purple;
+  border-radius: 5px;
+}
+
+#nicki2 {
+  width: 13em;
+  height: 19em;
+  border: 5px inset purple;
+  border-radius: 5px;
+}
+
+#guide-box {
+  width: 20em;
+  height: 5em;
+  background-color: hsl(300, 24%, 95%);
+  color: purple;
+  border: 4px solid purple;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+#guide-text {
+  font-size: 1.25rem;
+  display: flex;
+  align-self: center;
+}
+
+.control-buttons {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 340%;
+  left: 135%;
+}
+.upp {
+  width: 80px;
+  height: 70px;
+  border: none;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px;
+  position: relative;
+  left: 19%;
+}
+.leftt {
+  width: 80px;
+  height: 70px;
+  border: none;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+.rightt {
+  width: 80px;
+  height: 70px;
+  border: none;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
+  font-size: 1.5rem;
+}
+.downn {
+  width: 80px;
+  height: 70px;
+  border: none;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px;
+  position: relative;
+  left: 19%;
+}
+
+/*grids*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  grid-template-rows: 0.5fr 1.4fr 0.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Heading ."
+    "nicki-1 game nicki-2"
+    "info game .";
+}
+.game {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 0.75fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "buttons"
+    "snake";
+  grid-area: game;
+}
+.heading {
+  text-align: center;
+  grid-area: Heading;
+}
+.nicki-1 {
+  display: flex;
+  justify-content: center;
+  grid-area: nicki-1;
+  min-width: 400px;
+}
+.nicki-2 {
+  display: flex;
+  justify-content: center;
+  grid-area: nicki-2;
+  min-width: 400px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  grid-area: buttons;
+}
+.info {
+  row-gap: 10px;
+  display: flex;
+  justify-content: center;
+  grid-area: info;
+}
+.snake {
+  display: flex;
+  justify-content: center;
+  grid-area: snake;
+}

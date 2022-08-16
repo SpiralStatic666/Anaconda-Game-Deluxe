@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake Game(Deluxe)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading"><h1 id="heading">ANACONDA</h1></div>
+      <div class="nicki-1">
+        <img src="./media/photos/nicki1.jpg" alt="anaconda" id="nicki1" />
+      </div>
+      <div class="nicki-2">
+        <img src="./media/photos/nicki2.jpg" alt="nicki pose" id="nicki2" />
+      </div>
+      <div class="game">
+        <div class="buttons">
+          <button onclick="play()" id="btn">Click for the music</button>
+          <button onclick="pause()" id="btn1">Pause</button>
+        </div>
+        <div class="snake">
+          <canvas id="snake" width="400" height="400"></canvas>
+        </div>
+      </div>
+      <div class="info">
+        <div id="guide-box">
+          <p id="guide-text">press arrow keys to start bitch</p>
+        </div>
+      </div>
+      <div class="control-buttons">
+        <button id="up" class="upp">UP</button><br>
+        <button id="left" class="leftt">LEFT</button>
+        <button id="right" class="rightt">RIGHT</button><br>
+        <button id="down" class="downn">DOWN</button>
+      </div>
+    </div>
+
+    <!--Anaconda by Nicki Minaj-->
+    <script>
+      let anaconda = new Audio("./media/sounds/anaconda.mp3");
+      function play() {
+        anaconda.play();
+      }
+      function pause() {
+        anaconda.pause();
+      }
+    </script>
+    <script src="snakeGame.js"></script>
+  </body>
+</html>
