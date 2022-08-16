@@ -1,5 +1,5 @@
 body {
-  background: hsl(304, 71%, 79%);
+  background: #d8bfd8;
   overflow: hidden;
   user-select: none;
 }
@@ -87,7 +87,7 @@ body {
   left: 135%;
 }
 .upp {
-  width: 80px;
+  width: 90px;
   height: 70px;
   border: none;
   background-color: rgb(128, 0, 128);
@@ -98,7 +98,7 @@ body {
   left: 19%;
 }
 .leftt {
-  width: 80px;
+  width: 90px;
   height: 70px;
   border: none;
   background-color: rgb(128, 0, 128);
@@ -107,7 +107,7 @@ body {
   margin-right: 50px;
 }
 .rightt {
-  width: 80px;
+  width: 90px;
   height: 70px;
   border: none;
   background-color: rgb(128, 0, 128);
@@ -115,7 +115,7 @@ body {
   font-size: 1.5rem;
 }
 .downn {
-  width: 80px;
+  width: 90px;
   height: 70px;
   border: none;
   background-color: rgb(128, 0, 128);
